@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<style>
+			blockquote{
+				background-color: black;
+				color: yellow;
+				padding: 10px;
+			}
+			div.cite{
+				background-color: black;
+				color: yellow;
+				text-align: right;
+				font-weight: bold;
+				font-size: x-large;
+			}
+		</style>
+	</head>
+
+	{% extends "base.css" %}
+	{% block content %}
+	<body>
+
+		<script>
+			function aboutme(){
+				//show about me information
+			}
+		</script>
+		
+		<blockquote> This is my home page, I think it is pretty awesome </blockquote>
+		<div class = "cite">Andrew Luo</div>
+
+	</body>
+	{% endblock %}
+	
+</html>

@@ -5,13 +5,13 @@ import flask
 APP = flask.Flask(__name__)
 
 
-@APP.route('/')
+#you can reuse templates with conditional statements!
+#given an arguement, can feed in various parameters to render certain parts of html!
+@APP.route("/")
 def index():
-    """ Displays the index page accessible at '/'
-    """
-    return flask.render_template('index.html')
+    return flask.render_template("index.css")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     APP.debug=True
     APP.run()

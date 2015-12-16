@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<style>
+			blockquote{
+				background-color: black;
+				color: yellow;
+				padding: 10px;
+			}
+			div.cite{
+				background-color: black;
+				color: yellow;
+				text-align: right;
+				font-weight: bold;
+				font-size: x-large;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<script>
+
+		</script>
+
+		<blockquote> Andrew is awesome </blockquote>
+		<div class = "cite">Abraham Lincoln</div>
+
+	</body>
+</html>

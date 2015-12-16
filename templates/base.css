@@ -1,0 +1,9 @@
+<!-- 
+put buttons across the top 	Andrew Luo  :"About me, Skills, Project, Contact, News, Blog"
+-->
+
+<Body> 
+	<p>This part of the template is inherited!</p>
+	
+	{% block content %}{% endblock %} <!-- new content in content block -->
+</Body>
