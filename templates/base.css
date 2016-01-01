@@ -1,9 +1,38 @@
 <!-- 
 put buttons across the top 	Andrew Luo  :"About me, Skills, Project, Contact, News, Blog"
 -->
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<!--Below meta tag allows responsive scaling on mobile devices-->
+		<!--Will scale with width, with an initial zoom scale of 1-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Bootstrap stuff -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-<Body> 
-	<p>This part of the template is inherited!</p>
-	
-	{% block content %}{% endblock %} <!-- new content in content block -->
-</Body>
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</head>
+	<Body style="background-color:#262626;"> 
+		<h2 style="color:white">Andrew Luo</h2>
+		<div class="panel panel-default" style="background-color:white;">		
+			<div class="panel-body">
+				<img class="img-responsive" src="static/images/myface.jpg" style="width:20%">
+				<div class="btn-group-vertical" style="width:20%;background-color">
+				  <button type="button" class="btn btn-default">	About me	</button>
+				  <button type="button" class="btn btn-default">	Skills	</button>
+				  <button type="button" class="btn btn-default">	News	</button>
+				  <button type="button" class="btn btn-default">	Projects	</button>
+				  <button type="button" class="btn btn-default">	Contact	</button>
+				  <button type="button" class="btn btn-default">	Resume	</button>
+				</div>
+			</div>
+		</div>
+		{% block content %}{% endblock %} <!-- new content in content block -->
+	</Body>
+</html>

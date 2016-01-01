@@ -1,19 +1,20 @@
-<html>
+
+<html lang ="en">
 	<head>
-		<style>
-			blockquote{
-				background-color: black;
-				color: yellow;
-				padding: 10px;
-			}
-			div.cite{
-				background-color: black;
-				color: yellow;
-				text-align: right;
-				font-weight: bold;
-				font-size: x-large;
-			}
-		</style>
+		<meta charset = "utf-8">
+		<!--Below meta tag allows responsive scaling on mobile devices-->
+		<!--Will scale with width, with an initial zoom scale of 1-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Bootstrap stuff -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	</head>
 
 	{% extends "base.css" %}
@@ -26,8 +27,9 @@
 			}
 		</script>
 		
-		<blockquote> This is my home page, I think it is pretty awesome </blockquote>
-		<div class = "cite">Andrew Luo</div>
+		<div class="container-fluid">
+			<p style="color:white">This is bootstrap!</p>
+		</div>
 
 	</body>
 	{% endblock %}
