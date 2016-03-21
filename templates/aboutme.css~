@@ -15,10 +15,14 @@
 			}
 		</style>
 	</head>
-	{% extends "base.css" %}
 
-	{% block content %}
-	<blockquote> Andrew is awesome </blockquote>
-	<div class = "cite">Abraham Lincoln</div>
-	{% endblock %}
+	<body>
+		{% extends "base.css" %}
+
+		{% block content %}
+		<blockquote> Andrew is awesome </blockquote>
+		<div class = "cite">Abraham Lincoln</div>
+		{% endblock %}
+
+	</body>
 </html>

@@ -49,11 +49,11 @@ put buttons across the top 	Andrew Luo  :"Skills, Project, Contact, News, Blog"
 			<h1>Andrew Luo</h1>
 			<img class="img-responsive" src="static/images/myface.jpg" style="width:100%">
 			<div class="btn-group-vertical" style="width:100%;">
-				<a href="#" class="btn btn-default" role="button">About Me</a>
-				<a href="#" class="btn btn-default" role="button">Projects</a>
-				<a href="#" class="btn btn-default" role="button">Skills</a>
-				<a href="#" class="btn btn-default" role="button">News</a>
-				<a href="#" class="btn btn-default" role="button">Blog</a>
+				<a href="{{ url_for('aboutme') }}" class="btn btn-default" role="button">	About Me	</a>
+				<a href="{{ url_for('aboutme') }}" class="btn btn-default" role="button">				Projects	</a>
+				<a href="{{ url_for('aboutme') }}" class="btn btn-default" role="button">				Skills		</a>
+				<a href="{{ url_for('aboutme') }}" class="btn btn-default" role="button">				News		</a>
+				<a href="{{ url_for('aboutme') }}" class="btn btn-default" role="button">				Blog		</a>
 			</div>
 		</ul>
 
