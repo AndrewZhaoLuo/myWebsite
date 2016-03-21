@@ -15,7 +15,7 @@ def index():
     if random.randint(1,10) == 1:
 	titleName = "I SEE YOU"
     
-    return flask.render_template("index.css", title = titleName)
+    return flask.render_template("index.css")
 
 
 if __name__ == "__main__":
