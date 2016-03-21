@@ -1,24 +1,22 @@
 <html>
 	<head>
 		<style>
-			blockquote{
-				background-color: black;
-				color: yellow;
-				padding: 10px;
-			}
-			div.cite{
-				background-color: black;
-				color: yellow;
-				text-align: right;
-				font-weight: bold;
-				font-size: x-large;
+			p{
+				color: #ffffff;
 			}
 		</style>
 	</head>
 	{% extends "base.css" %}
 
 	{% block content %}
-	<blockquote> Andrew is awesome </blockquote>
-	<div class = "cite">Abraham Lincoln</div>
+	<p>
+		Hey! I am currently a freshman attending the University of Washington. I'm currently pursuing a Computer Science
+		and Bioengineering double major. I will be graduating in June of 2019.
+	</p>
+
+	<p>
+		My interests are broad, but are primarily focused on improving the state of 
+		health and scientific research. Be sure to look for me in the future!
+	</p>
 	{% endblock %}
 </html>

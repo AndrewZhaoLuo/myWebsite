@@ -31,12 +31,17 @@ put buttons across the top 	Andrew Luo  :"Skills, Project, Contact, News, Blog"
 				height: 100%; 
 				position: fixed; 
 			}
-			h1{
+			h1, #p{
 				background-color: #f1f1f1;
 				color: #3c3c3c;
 				padding: 0;
 				margin: 0;
 				text-align: center;
+			}
+		
+			#p{
+				text-align: center;
+				font-size: 70%;
 			}
 		</style>
 
@@ -47,14 +52,16 @@ put buttons across the top 	Andrew Luo  :"Skills, Project, Contact, News, Blog"
 		<!--Nav bar-->
 		<ul>
 			<h1>Andrew Luo</h1>
+			<p id="p"> ©2016 Andrew Luo </p>
 			<img class="img-responsive" src="static/images/myface.jpg" style="width:100%">
 			<div class="btn-group-vertical" style="width:100%;">
 				<a href="{{ url_for('aboutme') }}" class="btn btn-default" role="button">	About Me	</a>
-				<a href="{{ url_for('aboutme') }}" class="btn btn-default" role="button">				Projects	</a>
-				<a href="{{ url_for('aboutme') }}" class="btn btn-default" role="button">				Skills		</a>
-				<a href="{{ url_for('aboutme') }}" class="btn btn-default" role="button">				News		</a>
-				<a href="{{ url_for('aboutme') }}" class="btn btn-default" role="button">				Blog		</a>
+				<a href="{{ url_for('projects') }}" class="btn btn-default" role="button">	Projects	</a>
+				<a href="{{ url_for('skills') }}" class="btn btn-default" role="button">	Skills		</a>
+				<a href="{{ url_for('news') }}" class="btn btn-default" role="button">		News		</a>
+				<a href="{{ url_for('blog') }}" class="btn btn-default" role="button">		Blog		</a>
 			</div>
+			<p id="p">Built with Flask, Bootstrap, and <3 &nbsp &nbsp</p>
 		</ul>
 
 		<!--Content panel-->
